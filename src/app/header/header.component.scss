@@ -1,5 +1,6 @@
 .header {
-    position: fixed;
+    //position: fixed;
+    z-index: 10;
     top: 0;
     left: 0;
     right: 0;
@@ -9,12 +10,40 @@
     align-items: center;
     padding-left: 60px;
     padding-right: 60px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.8);
 
     nav {
         width: 40%;
         display: flex;
         justify-content: space-around;
         align-items: center;
+
+        a {
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            cursor: pointer;
+            position: relative;
+
+            &::after {
+                transition: all 250ms ease;
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0;
+                bottom: -3px;
+                width: 0;
+                height: 3px;
+                background-color: rgb(13, 255, 215);
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
     }
 }
 
