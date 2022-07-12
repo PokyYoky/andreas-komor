@@ -4,11 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
+import { SkillPageComponent } from './skill-page/skill-page.component';
+import { SkillCardComponent } from './skill-card/skill-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    SkillPageComponent,
+    SkillCardComponent
   ],
   imports: [
     BrowserModule,

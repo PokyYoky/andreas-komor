@@ -1,0 +1,29 @@
+
+$head-radius: 60px;
+.skill-body {
+    width: 150px;
+    height: 90px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .skill-head {
+        width: $head-radius;
+        height: $head-radius;
+        background-color: white;
+        border-radius: 100%;
+        transform: translateY(calc($head-radius/2*-1));
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .skill-logo {
+            width: calc($head-radius/2);
+            height: calc($head-radius/2);
+        }
+    }
+}

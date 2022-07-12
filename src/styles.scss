@@ -10,3 +10,12 @@ body {
     "Oxygen","Ubuntu","Helvetica Neue", Arial, sans-serif;
     background-color: rgb(30, 28, 28);
 }
+
+.page-content {
+    width: 100%;
+    min-height: 30px;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
