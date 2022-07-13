@@ -6,6 +6,32 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+   .effekt:hover {
+       animation: wiggle 225ms forwards ease;
+   }
+   
+   @keyframes wiggle {
+       0% {
+           transform: translate(0, 0);
+       }
+       15% {
+           transform: translate(1rem, 0);
+       }
+       35% {
+           transform: translate(-1rem, 0);
+       }
+       55% {
+           transform: translate(1rem, 0);
+       }
+       80% {
+           transform: translate(-1rem, 0);
+       }
+       100% {
+           transform: translate(0, 0);
+       }
+   }
+  </style>
   <script>
   </script>
 </head>

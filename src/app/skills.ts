@@ -37,14 +37,20 @@ export interface Skill {
         description: ""
     },
     {
+        logo: "./assets/img/git.png",
+        name: "Git",
+        level: undefined,
+        description: ""
+    },
+    {
         logo: "./assets/img/scrum.png",
         name: "SCRUM",
         level: undefined,
         description: ""
     },
     {
-        logo: "./assets/img/git.png",
-        name: "Git",
+        logo: "./assets/img/pen.png",
+        name: "Design Thinking",
         level: undefined,
         description: ""
     }
