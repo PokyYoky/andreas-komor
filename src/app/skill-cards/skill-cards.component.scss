@@ -5,16 +5,22 @@ $head-radius: 60px;
     height: 90px;
     background-color: white;
     border-radius: 5px;
+    margin: calc($head-radius/3) 5px;
+    position: relative;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    color: black;
+    font-size: 0.9rem;
+    font-weight: bold;
 
     .skill-head {
         width: $head-radius;
         height: $head-radius;
+        position: absolute;
         background-color: white;
         border-radius: 100%;
-        transform: translateY(calc($head-radius/2*-1));
+        top: calc($head-radius/2*-1);
         box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
         display: flex;
         justify-content: center;
