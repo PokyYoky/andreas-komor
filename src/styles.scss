@@ -10,7 +10,9 @@ body {
         "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
     //background-color: rgb(30, 28, 28);
     //background-color: rgb(2, 0, 36);
-    background: -moz-linear-gradient(171deg, rgba(30, 28, 28, 1) 0%, rgba(41, 38, 38, 1) 75%, rgba(30, 93, 106, 1) 100%);
+    background: 
+    -moz-linear-gradient(9deg, rgba(30, 28, 28, 1) 0%, rgba(41, 38, 38, 1) 75%, rgba(30, 93, 106, 1) 100%),
+    -moz-linear-gradient(171deg, rgba(30, 28, 28, 1) 0%, rgba(41, 38, 38, 1) 75%, rgba(30, 93, 106, 1) 100%);
     background:
     -webkit-linear-gradient(9deg, rgba(30, 28, 28, 0.5) 0%, rgba(41, 38, 38, 0.5) 75%, rgba(30, 93, 106, 0.5) 100%), 
     -webkit-linear-gradient(171deg, rgba(30, 28, 28, 1) 0%, rgba(41, 38, 38, 1) 75%, rgba(30, 93, 106, 1) 100%);
