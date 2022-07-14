@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SkillPageComponent } from './skill-page/skill-page.component';
 import { SkillCardsComponent } from './skill-cards/skill-cards.component';
+import { SoundSwitchComponent } from './sound-switch/sound-switch.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SkillPageComponent,
-    SkillCardsComponent
+    SkillCardsComponent,
+    SoundSwitchComponent
   ],
   imports: [
     BrowserModule,
