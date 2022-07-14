@@ -8,6 +8,7 @@ import { SkillPageComponent } from './skill-page/skill-page.component';
 import { SkillCardsComponent } from './skill-cards/skill-cards.component';
 import { SoundSwitchComponent } from './sound-switch/sound-switch.component';
 import { ArrowDownComponent } from './arrow-down/arrow-down.component';
+import { AvatarComponent } from './avatar/avatar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ArrowDownComponent } from './arrow-down/arrow-down.component';
     SkillPageComponent,
     SkillCardsComponent,
     SoundSwitchComponent,
-    ArrowDownComponent
+    ArrowDownComponent,
+    AvatarComponent
   ],
   imports: [
     BrowserModule,

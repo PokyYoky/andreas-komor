@@ -1,0 +1,37 @@
+.avatar {
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+    object-position: 0 10%;
+    position: absolute;
+    top: -220px;
+    right: 0px;
+    opacity: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+    //padding: 20px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+
+    //transform: translate(400px, -440px);
+    animation: fadeIn 2s cubic-bezier(0,.3,.12,1.8) forwards;
+}
+//cubic-bezier(0,.3,0,.64)
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(0, 0);
+        transform: scale(0.6);
+        box-shadow: 20px -20px 50px rgba(255, 255, 255, 0.5);
+    }
+
+    85% {
+        box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-200px, 400px);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    }
+}
