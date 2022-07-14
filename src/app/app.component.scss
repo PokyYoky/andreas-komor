@@ -8,6 +8,26 @@
     align-items: center;
     color: white;
     animation: slideLayout 1s ease-out forwards;
+
+    .delayed {
+        animation: slideLayout 1s ease-out 2s forwards;
+        opacity: 0;
+    }
+
+    .c2 {
+        color: rgb(250, 40, 89);
+    }
+
+    .c1 {
+        color: rgb(45, 252, 216);
+    }
+
+    p {
+        font-size: 4rem;
+        align-self: flex-start;
+        padding-left: 8rem;
+        margin: 20px;
+    }
 }
 
 .headline {
