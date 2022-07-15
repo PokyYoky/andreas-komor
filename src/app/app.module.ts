@@ -10,6 +10,8 @@ import { SoundSwitchComponent } from './sound-switch/sound-switch.component';
 import { ArrowDownComponent } from './arrow-down/arrow-down.component';
 import { AvatarComponent } from './avatar/avatar.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { ProjectCardsComponent } from './project-cards/project-cards.component';
+import { SkillSwitchComponent } from './skill-switch/skill-switch.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { WelcomeComponent } from './welcome/welcome.component';
     SoundSwitchComponent,
     ArrowDownComponent,
     AvatarComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    ProjectCardsComponent,
+    SkillSwitchComponent
   ],
   imports: [
     BrowserModule,

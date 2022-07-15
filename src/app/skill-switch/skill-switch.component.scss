@@ -1,0 +1,16 @@
+@use 'src/variables' as v;
+
+button {
+    height: 3.5rem;
+    min-width: 6rem;
+    background-color: black;
+    border-image: none;
+    border: 1px solid v.$c2;
+    margin: 0 2px;
+    font-size: 0.9rem;
+    color: white;
+
+    &:hover {
+        background-color: v.$c2;
+    }
+}

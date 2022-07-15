@@ -17,13 +17,23 @@
     margin-bottom: 50px;
 }
 
-.cards {
-    max-width: 510px;
-    min-height: 50%;
+@mixin base-frame {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    //min-height: 50%;
+    padding: 5px;
+}
+
+.cards-frame {
+    @include base-frame;
+    max-width: 510px;
+}
+
+.projects-frame {
+    @include base-frame;
+    max-width: 660px;
 }
 
 .pos-left-up {

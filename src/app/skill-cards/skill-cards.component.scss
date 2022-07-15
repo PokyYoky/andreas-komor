@@ -1,11 +1,11 @@
-
 $head-radius: 60px;
+
 .skill-body {
     width: 150px;
     height: 90px;
     background-color: white;
     border-radius: 5px;
-    margin: calc($head-radius/3) 5px;
+    margin: calc($head-radius/2) 10px;
     position: relative;
     display: flex;
     justify-content: center;
