@@ -1,3 +1,5 @@
+@use 'src/variables' as v;
+
 .arrow {
     width: 64px;
     height: 64px;
@@ -9,13 +11,15 @@
     padding: 20px;
     opacity: 0;
     backdrop-filter: blur(4px);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 20px rgba(v.$c2, 0.6);
     animation: attention 3.6s ease-in-out 3s infinite;
     cursor: pointer;
 
     &:hover {
-        box-shadow: 0 -20px 20px rgba(255, 255, 255, 0.5);
+        box-shadow: 0 -20px 20px rgba(v.$c2, 0.5);
         transform: translateY(20px);
+        animation: none;
+        opacity: 1;
     }
 }
 

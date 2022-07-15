@@ -1,0 +1,21 @@
+@use 'src/variables' as v;
+
+.delayed {
+    animation: slideLayout 1s ease-out 2s forwards;
+    opacity: 0;
+}
+
+.c2 {
+    color: v.$c2;   //rgb(250, 40, 89);
+}
+
+.c1 {
+    color: v.$c1;   //rgb(45, 252, 216);
+}
+
+p {
+    font-size: 4rem;
+    align-self: flex-start;
+    padding-left: 8rem;
+    margin: 20px;
+}

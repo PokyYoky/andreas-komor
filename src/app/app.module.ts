@@ -9,6 +9,7 @@ import { SkillCardsComponent } from './skill-cards/skill-cards.component';
 import { SoundSwitchComponent } from './sound-switch/sound-switch.component';
 import { ArrowDownComponent } from './arrow-down/arrow-down.component';
 import { AvatarComponent } from './avatar/avatar.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AvatarComponent } from './avatar/avatar.component';
     SkillCardsComponent,
     SoundSwitchComponent,
     ArrowDownComponent,
-    AvatarComponent
+    AvatarComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,5 @@
+@use 'src/variables' as v;
+
 .header {
     position: fixed;
     z-index: 10;
@@ -37,7 +39,7 @@
                 bottom: -3px;
                 width: 0;
                 height: 3px;
-                background-color: rgb(13, 255, 215);
+                background-color: v.$c1;
             }
 
             &:hover::after {
