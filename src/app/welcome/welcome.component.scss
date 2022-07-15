@@ -1,16 +1,18 @@
 @use 'src/variables' as v;
 
+$hang: cubic-bezier(0, -0.01, .61, 2.41);
+
 .delayed {
     animation: slideLayout 1s ease-out 2s forwards;
     opacity: 0;
 }
 
 .c2 {
-    color: v.$c2;   //rgb(250, 40, 89);
+    color: v.$c2; //rgb(250, 40, 89);
 }
 
 .c1 {
-    color: v.$c1;   //rgb(45, 252, 216);
+    color: v.$c1; //rgb(45, 252, 216);
 }
 
 p {
@@ -18,4 +20,34 @@ p {
     align-self: flex-start;
     padding-left: 8rem;
     margin: 20px;
+}
+
+span {
+    display: inline-block;
+}
+
+.jump1:hover {
+    animation: jump 225ms $hang;
+}
+
+.jump2:hover {
+    animation: jump 325ms $hang;
+}
+
+.jump3:hover {
+    animation: jump 360ms $hang;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+
+    70% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
