@@ -30,6 +30,10 @@
             cursor: pointer;
             position: relative;
 
+            &:first-child {
+                color: v.$c2;
+            }
+
             &::after {
                 transition: all 250ms ease;
                 content: "";
@@ -46,12 +50,13 @@
                 width: 100%;
             }
         }
+
     }
 }
-
 
 .logo {
     height: 72px;
     width: 72px;
     object-fit: cover;
+    cursor: pointer;
 }

@@ -3,9 +3,11 @@
         <img class="skill-logo" [src]="skill.logo" alt="skill-logo">
    </div>
     -->
-    <div class="overlay hover-only">
-        <span class="title">{{ project.title }}</span>
-        <span class="desc">{{ project.description }}</span>
-        <button type="button">Try out</button>
-    </div>
+        <img *ngIf="project.image" class="project-img" src="{{ project.image }}" alt="project {{ project.title }}">
+        <div class="overlay hover-only">
+            <span class="title">{{ project.title }}</span>
+            <span class="desc">{{ project.description }}</span>
+            <a *ngIf="project.url" role="button" href="{{ project.url }}" target="_blank">Try out</a>
+            <!--<button type="button">Try out</button>-->
+        </div>
 </div>

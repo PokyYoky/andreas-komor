@@ -10,12 +10,12 @@ export const projects = [
     {
         category: "JavaScript",
         title: "El Pollo Loco",
-        url: "",
+        url: "https://andreas-komor.developerakademie.net/Projekte/ElPolloLoco/index.html",
         description: "A crazy jump & run game in the desert of Mexico...",
-        image: ""
+        image: "../assets/img/elpolloloco_640.jpg"
     },
     {
-        category: "Angular",
+        category: "",
         title: "Ring of Fire",
         url: "",
         description: "",
@@ -23,9 +23,9 @@ export const projects = [
     },
     {
         category: "JavaScript",
-        title: "Project 2",
+        title: "Join",
         url: "",
-        description: "A 2nd project",
-        image: ""
+        description: "A kanban board to support SCRUM",
+        image: "../assets/img/join_640.jpg"
     }
 ];

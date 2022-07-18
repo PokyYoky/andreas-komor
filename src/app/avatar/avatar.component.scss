@@ -1,10 +1,10 @@
 @use 'src/variables' as v;
 
 .avatar {
-    width: 210px;
-    height: 210px;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
-    object-position: 0 10%;
+    object-position: 10% 20%;
     position: absolute;
     top: -220px;
     right: 0px;
