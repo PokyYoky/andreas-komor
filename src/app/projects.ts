@@ -12,7 +12,7 @@ export const projects = [
         title: "El Pollo Loco",
         url: "https://andreas-komor.developerakademie.net/Projekte/ElPolloLoco/index.html",
         description: "A crazy jump & run game in the desert of Mexico...",
-        image: "../assets/img/elpolloloco_640.jpg"
+        image: "./assets/img/elpolloloco_640.jpg"
     },
     {
         category: "",
@@ -26,6 +26,6 @@ export const projects = [
         title: "Join",
         url: "",
         description: "A kanban board to support SCRUM",
-        image: "../assets/img/join_640.jpg"
+        image: "./assets/img/join_640.jpg"
     }
 ];
