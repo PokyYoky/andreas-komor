@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SoundSwitchComponent implements OnInit {
 
-  bgSound = new Audio('../assets/audio/background_sound_short.mp3');
+  bgSound = new Audio('./assets/audio/background_sound_short.mp3');
   onAir = false;
 
   constructor() { }
