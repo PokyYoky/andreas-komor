@@ -12,6 +12,9 @@ import { AvatarComponent } from './avatar/avatar.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { ProjectCardsComponent } from './project-cards/project-cards.component';
 import { SkillSwitchComponent } from './skill-switch/skill-switch.component';
+import { AvatarAnimatedComponent } from './avatar-animated/avatar-animated.component';
+import { AvatarStaticComponent } from './avatar-static/avatar-static.component';
+import { PageContentComponent } from './page-content/page-content.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { SkillSwitchComponent } from './skill-switch/skill-switch.component';
     AvatarComponent,
     WelcomeComponent,
     ProjectCardsComponent,
-    SkillSwitchComponent
+    SkillSwitchComponent,
+    AvatarAnimatedComponent,
+    AvatarStaticComponent,
+    PageContentComponent
   ],
   imports: [
     BrowserModule,

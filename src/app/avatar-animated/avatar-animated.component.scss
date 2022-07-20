@@ -1,0 +1,30 @@
+@use 'src/variables' as v;
+
+:host ::ng-deep img {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -220px;
+    right: 0px;
+    opacity: 0;
+    animation: fadeIn 2s cubic-bezier(0, .3, .12, 1.8) forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(0, 0);
+        transform: scale(0.6);
+        box-shadow: 20px -20px 50px v.$c1;
+    }
+
+    85% {
+        box-shadow: 0 0 30px v.$c1;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-200px, 400px);
+        box-shadow: 0 0 20px v.$c1;
+    }
+}
