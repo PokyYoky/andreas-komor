@@ -15,6 +15,7 @@ import { SkillSwitchComponent } from './skill-switch/skill-switch.component';
 import { AvatarAnimatedComponent } from './avatar-animated/avatar-animated.component';
 import { AvatarStaticComponent } from './avatar-static/avatar-static.component';
 import { PageContentComponent } from './page-content/page-content.component';
+import { StoryCardsComponent } from './story-cards/story-cards.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { PageContentComponent } from './page-content/page-content.component';
     SkillSwitchComponent,
     AvatarAnimatedComponent,
     AvatarStaticComponent,
-    PageContentComponent
+    PageContentComponent,
+    StoryCardsComponent
   ],
   imports: [
     BrowserModule,

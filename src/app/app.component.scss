@@ -41,6 +41,14 @@
     margin-bottom: 10rem;
 }
 
+.section {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem 0;
+}
+
 
 @keyframes slideLayout {
     0% {

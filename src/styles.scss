@@ -25,14 +25,3 @@ body {
     
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024", endColorstr="#19788b", GradientType=1);
 }
-
-.section {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-    &:first-child {
-        border-bottom: 1px solid v.$c2;
-    }
-}

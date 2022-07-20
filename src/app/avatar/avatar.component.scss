@@ -1,6 +1,7 @@
 @use 'src/variables' as v;
 
 .avatar {
+    background-color: v.$c1;
     object-fit: cover;
     object-position: 10% 20%;
     border: 1px solid rgba(v.$c1, 0.5);
