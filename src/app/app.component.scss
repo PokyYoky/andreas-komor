@@ -50,6 +50,38 @@
 }
 
 
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    input, textarea {
+        margin-bottom: 10px; 
+    }
+
+    label {
+        margin: 15px 0 5px 0;
+    }
+
+    button {
+        margin-top: 10px;
+        padding: 5px 20px;
+        appearance: none;
+        background-color: transparent;
+        border: 1px solid v.$c1;
+        font-size: 20px;
+        color: v.$c1;
+        align-self: baseline;
+    }
+
+    [placeholder]:focus::-webkit-input-placeholder {
+        transition: text-indent 1s 250ms ease-in;
+        text-indent: -100%;
+        opacity: 1;
+    }
+}
+
+
 @keyframes slideLayout {
     0% {
         transform: translateY(20px);
