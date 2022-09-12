@@ -12,12 +12,12 @@
   <p class="headline">MY Skills</p>
   <app-skill-cards class="cards-frame"></app-skill-cards>
 </div>
-<div class="content project-page">
+<div id="projects" class="content project-page">
   <p class="headline">MY Projects</p>
   <app-skill-switch></app-skill-switch>
   <app-project-cards class="projects-frame"></app-project-cards>
 </div>
-<div class="content about-page">
+<div id="about" class="content about-page">
   <p class="headline">About me.</p>
   <div class="section">
     <app-avatar-static>
@@ -30,16 +30,17 @@
   </div>
     <app-story-cards class="story-frame"></app-story-cards>
 </div>
-<div class="content contact-page">
+<div id="contact" class="content contact-page">
   <p class="headline">Contact me.</p>
-  <form action="./assets/additional/send_mail.php" method="post" class="contact-section">
+  <p class="text">Get in touch via the form below or by email: <a href="mailto:e-text@online.de" title="click to open your email client">e-text@online.de</a></p>
+  <form action="./src/assets/additional/send_mail.php" method="post" class="contact-section">
     <label for="name">Name</label>
-    <input id="name" type="text" placeholder="Enter your name">
+    <input id="name" type="text" placeholder="Enter your name" required title="Please enter your name">
     <label for="mail">E-Mail address</label>
-    <input id="mail" type="text" placeholder="Enter your Email address">
+    <input id="mail" type="email" placeholder="Enter your Email address" required title="Please enter your mail address">
     <label for="message">Message</label>
-    <textarea id="message" type="text" placeholder="Enter your message" rows="10"></textarea>
-    <button type="submit">Send</button>
+    <textarea id="message" type="text" placeholder="Enter your message" rows="10" required title="Please enter your message"></textarea>
+    <button type="submit" title="send a mail">Send</button>
   </form>
 </div>
 <!-- <app-skill-page></app-skill-page> -->

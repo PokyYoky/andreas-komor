@@ -10,11 +10,28 @@
     align-items: center;
     color: white;
     animation: slideLayout 1s ease-out forwards;
+
+    a {
+        text-decoration: none;
+
+        &:link {
+            color: v.$c1;
+        }
+
+        &:visited {
+            text-shadow: 2px 2px rgba(255, 255, 255, 0.7);
+        }
+
+        &:hover {
+            color: v.$c1_l;
+        }
+    }
 }
 
 .headline {
     font-size: 1.5rem;
-    margin-bottom: 50px;
+    margin-top: 150px;
+    margin-bottom: 30px;
 }
 
 @mixin base-frame {
@@ -55,8 +72,25 @@
     flex-direction: column;
     justify-content: center;
 
+    textarea {
+        resize: none;
+    }
+
     input, textarea {
+        width: 300px;
         margin-bottom: 10px; 
+        color: white;
+        background-color: rgba(56, 54, 54, 0.5);
+        border: 1px solid transparent;
+        border-radius: 5px;
+        padding: 10px 10px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+        transition: border-color 500ms ease-in-out;
+
+        &:focus {
+            outline: none;
+            border-color: v.$c1;
+        }
     }
 
     label {
@@ -64,7 +98,7 @@
     }
 
     button {
-        margin-top: 10px;
+        margin-top: 30px;
         padding: 5px 20px;
         appearance: none;
         background-color: transparent;
