@@ -1,0 +1,49 @@
+@use 'src/variables' as v;
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    textarea {
+        resize: none;
+    }
+
+    input, textarea {
+        width: 300px;
+        margin-bottom: 10px; 
+        color: white;
+        background-color: rgba(56, 54, 54, 0.5);
+        border: 1px solid transparent;
+        border-radius: 5px;
+        padding: 10px 10px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+        transition: border-color 500ms ease-in-out;
+
+        &:focus {
+            outline: none;
+            border-color: v.$c1;
+        }
+    }
+
+    label {
+        margin: 15px 0 5px 0;
+    }
+
+    button {
+        margin-top: 30px;
+        padding: 5px 20px;
+        appearance: none;
+        background-color: transparent;
+        border: 1px solid v.$c1;
+        font-size: 20px;
+        color: v.$c1;
+        align-self: baseline;
+    }
+
+    [placeholder]:focus::-webkit-input-placeholder {
+        transition: text-indent 1s 250ms ease-in;
+        text-indent: -100%;
+        opacity: 1;
+    }
+}

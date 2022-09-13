@@ -16,6 +16,7 @@ import { AvatarAnimatedComponent } from './avatar-animated/avatar-animated.compo
 import { AvatarStaticComponent } from './avatar-static/avatar-static.component';
 import { PageContentComponent } from './page-content/page-content.component';
 import { StoryCardsComponent } from './story-cards/story-cards.component';
+import { ContactPageComponent } from './contact-page/contact-page.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { StoryCardsComponent } from './story-cards/story-cards.component';
     AvatarAnimatedComponent,
     AvatarStaticComponent,
     PageContentComponent,
-    StoryCardsComponent
+    StoryCardsComponent,
+    ContactPageComponent
   ],
   imports: [
     BrowserModule,
