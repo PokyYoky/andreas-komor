@@ -17,6 +17,7 @@ import { AvatarStaticComponent } from './avatar-static/avatar-static.component';
 import { PageContentComponent } from './page-content/page-content.component';
 import { StoryCardsComponent } from './story-cards/story-cards.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,9 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
