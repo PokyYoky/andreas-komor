@@ -18,15 +18,19 @@ export class ContactPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  async sendMail() {
-    console.log('Sending email', this.myForm);
+  //handling loading animation
+  loadAnimationOn: boolean = false;
 
+  async sendMail() {
     let fdName = this.fieldName.nativeElement;
     let fdMail = this.fieldEmail.nativeElement;
     let fdMessage = this.fieldMessage.nativeElement;
     let btnSend = this.btnSend.nativeElement;
 
     this.disableElements(fdName, fdMail, fdMessage, btnSend);
+
+    // fade in load animation
+    this.loadAnimationOn = true;
 
     //send a mail
     let fData = new FormData();
@@ -41,10 +45,14 @@ export class ContactPageComponent implements OnInit {
       }
     );
 
+    // fade out load animation
+    this.loadAnimationOn = false;
+    
     //user message
 
 
     this.enableElements(fdName, fdMail, fdMessage, btnSend);
+    this.resetFields(fdName, fdMail, fdMessage);
   }
 
 
@@ -60,5 +68,11 @@ export class ContactPageComponent implements OnInit {
     fdMail.disabled = false;
     fdMessage.disabled = false;
     btnSend.disabled = false;
+  }
+
+  resetFields(fdName: any, fdMail: any, fdMessage: any): void {
+    fdName.value = '';
+    fdMail.value = '';
+    fdMessage.value = '';
   }
 }

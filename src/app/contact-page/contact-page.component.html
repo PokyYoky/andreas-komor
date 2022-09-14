@@ -7,4 +7,5 @@
     <label for="message">Message</label>
     <textarea id="message" name="message" type="text" placeholder="Enter your message" rows="10" required title="Please enter your message" #fieldMessage></textarea>
     <button type="submit" title="send a mail" #btnSend>Send</button>
+    <app-load-spinner *ngIf="loadAnimationOn"></app-load-spinner>
 </form>

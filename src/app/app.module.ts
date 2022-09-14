@@ -18,6 +18,7 @@ import { PageContentComponent } from './page-content/page-content.component';
 import { StoryCardsComponent } from './story-cards/story-cards.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoadSpinnerComponent } from './load-spinner/load-spinner.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AvatarStaticComponent,
     PageContentComponent,
     StoryCardsComponent,
-    ContactPageComponent
+    ContactPageComponent,
+    LoadSpinnerComponent
   ],
   imports: [
     BrowserModule,
