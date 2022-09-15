@@ -1,0 +1,32 @@
+@use 'src/variables' as v;
+
+.overlay {
+    z-index: -10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 3s ease;
+
+    .message {
+        min-height: 100px;
+        min-width: 200px;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px v.$c1;
+        border-radius: v.$bdr;
+        background-color: rgb(3, 78, 3);
+    }
+}
+
+.show-message {
+    z-index: 10;
+    opacity: 1;
+}

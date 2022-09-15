@@ -19,6 +19,7 @@ import { StoryCardsComponent } from './story-cards/story-cards.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoadSpinnerComponent } from './load-spinner/load-spinner.component';
+import { UserMessageComponent } from './user-message/user-message.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { LoadSpinnerComponent } from './load-spinner/load-spinner.component';
     PageContentComponent,
     StoryCardsComponent,
     ContactPageComponent,
-    LoadSpinnerComponent
+    LoadSpinnerComponent,
+    UserMessageComponent
   ],
   imports: [
     BrowserModule,

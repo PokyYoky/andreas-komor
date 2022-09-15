@@ -21,6 +21,10 @@ export class ContactPageComponent implements OnInit {
   //handling loading animation
   loadAnimationOn: boolean = false;
 
+  //handling user-message
+  uMessage: string = 'Ich habe Ihre E-Mail erhalten.<br>Vielen Dank.';
+  loadUserMessage: boolean = false;
+
   async sendMail() {
     let fdName = this.fieldName.nativeElement;
     let fdMail = this.fieldEmail.nativeElement;
@@ -49,7 +53,7 @@ export class ContactPageComponent implements OnInit {
     this.loadAnimationOn = false;
     
     //user message
-
+    this.showUserMessage();
 
     this.enableElements(fdName, fdMail, fdMessage, btnSend);
     this.resetFields(fdName, fdMail, fdMessage);
@@ -74,5 +78,12 @@ export class ContactPageComponent implements OnInit {
     fdName.value = '';
     fdMail.value = '';
     fdMessage.value = '';
+  }
+
+  showUserMessage(): void {
+    this.loadUserMessage = true;
+    setTimeout(() => {
+      this.loadUserMessage = false;
+    }, 3000);
   }
 }
