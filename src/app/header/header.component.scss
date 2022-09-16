@@ -1,15 +1,15 @@
 @use 'src/variables' as v;
+@use 'src/mixins' as m;
 
 .header {
+    @include m.d-flex(row, space-between, center);
+
     position: fixed;
     z-index: 10;
     top: 0;
     left: 0;
     right: 0;
     height: v.$header-height;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding-left: v.$base-padding;
     padding-right: v.$base-padding;
     backdrop-filter: blur(5px);
@@ -17,11 +17,9 @@
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.8);
 
     nav {
+        @include m.d-flex(row, space-around, center);
         width: 60%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-
+        
         a {
             font-size: 1.2rem;
             text-decoration: none;
@@ -51,6 +49,10 @@
             }
         }
 
+    }
+
+    .mark {
+        border-bottom: 3px solid v.$c1;
     }
 }
 

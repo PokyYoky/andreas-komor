@@ -34,11 +34,7 @@
     }
 
     100% {
-//         background: rgb(255,255,255);
-// background: -moz-linear-gradient(189deg, rgba(255,255,255,1) 0%, rgba(203,203,203,1) 46%);
-// background: -webkit-linear-gradient(189deg, rgba(255,255,255,1) 0%, rgba(203,203,203,1) 46%);
-// background: linear-gradient(189deg, rgba(255,255,255,1) 0%, rgba(203,203,203,1) 46%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#cbcbcb",GradientType=1);
-        opacity: 0; 
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#cbcbcb", GradientType=1);
+        opacity: 0;
     }
 }

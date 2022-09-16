@@ -1,16 +1,13 @@
 @use 'src/variables' as v;
+@use 'src/mixins' as m;
 
 :host {
+    @include m.d-flex(row, space-evenly, stretch);
     padding: 4rem 0;
-    display: flex;  
-    justify-content: space-evenly;
     border-top: 1px solid v.$c1;
 }
 
 .story-body {
+    @include m.d-flex(column, flex-start, center);
     width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
 }

@@ -1,13 +1,12 @@
 @use 'src/variables' as v;
+@use 'src/mixins' as m;
 
 .content {
+    @include m.d-flex(column, center, center);
+
     height: 100vh;
     width: 100%;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     color: white;
     animation: slideLayout 1s ease-out forwards;
 
@@ -28,22 +27,14 @@
     }
 }
 
-@mixin base-frame {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    //min-height: 50%;
-    padding: 5px;
-}
 
 .cards-frame {
-    @include base-frame;
+    @include m.mosaic-order;
     max-width: 510px;
 }
 
 .projects-frame {
-    @include base-frame;
+    @include m.mosaic-order;
     max-width: 660px;
 }
 
@@ -53,11 +44,19 @@
 }
 
 .section {
+    @include m.d-flex(row, center, center);
+
     width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     padding: 4rem 0;
+
+    p {
+        padding: 80px;
+    }
+}
+
+.colored {
+    color: v.$c1;
+    font-size: larger;
 }
 
 

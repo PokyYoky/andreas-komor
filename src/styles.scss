@@ -1,4 +1,5 @@
 @use 'src/variables' as v;
+@use 'src/mixins' as m;
 
 html {
     font-size: 1em;
@@ -34,9 +35,7 @@ body {
 
 //frame to adjust base format
 .base-frame {
+    @include m.d-flex(column, center, center);
+
     padding: v.$base-padding;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }

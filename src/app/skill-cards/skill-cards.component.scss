@@ -1,35 +1,31 @@
-$head-radius: 60px;
+@use 'src/variables' as v;
+@use 'src/mixins' as m;
 
 .skill-body {
+    @include m.d-flex(row, center, center);
     width: 150px;
     height: 90px;
     background-color: white;
     border-radius: 5px;
-    margin: calc($head-radius/2) 10px;
+    margin: calc(v.$head-radius/2) 10px;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: black;
     font-size: 0.9rem;
     font-weight: bold;
 
     .skill-head {
-        width: $head-radius;
-        height: $head-radius;
+        @include m.d-flex(row, center, center);
+        width: v.$head-radius;
+        height: v.$head-radius;
         position: absolute;
         background-color: white;
         border-radius: 100%;
-        top: calc($head-radius/2*-1);
+        top: calc(v.$head-radius/2*-1);
         box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
 
         .skill-logo {
-            width: calc($head-radius/2);
-            height: calc($head-radius/2);
+            width: calc(v.$head-radius/2);
+            height: calc(v.$head-radius/2);
         }
     }
 }

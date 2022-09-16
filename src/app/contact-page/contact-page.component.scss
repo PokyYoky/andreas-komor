@@ -1,10 +1,9 @@
 @use 'src/variables' as v;
+@use 'src/mixins' as m;
 
 .contact-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
+    @include m.d-flex(column, center, stretch);
+    
     textarea {
         resize: none;
     }

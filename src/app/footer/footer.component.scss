@@ -1,13 +1,12 @@
 @use 'src/variables' as v;
+@use 'src/mixins' as m;
 
 footer {
+    @include m.d-flex(row, space-between, center);
+
     width: 100%;
     height: v.$header-height;
     background-color: rgb(220, 220, 220);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
 
     a {
         text-decoration: none;
