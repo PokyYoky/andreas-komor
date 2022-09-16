@@ -6,12 +6,12 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 90px;
+    height: v.$header-height;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: v.$base-padding;
+    padding-right: v.$base-padding;
     backdrop-filter: blur(5px);
     background-color: rgba(0, 0, 0, 0.3);
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.8);

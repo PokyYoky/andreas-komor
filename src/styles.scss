@@ -31,3 +31,12 @@ body {
     margin-top: 150px;
     margin-bottom: 30px;
 }
+
+//frame to adjust base format
+.base-frame {
+    padding: v.$base-padding;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

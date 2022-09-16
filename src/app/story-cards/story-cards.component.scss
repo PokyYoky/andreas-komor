@@ -1,8 +1,7 @@
 @use 'src/variables' as v;
 
 :host {
-    width: 80%;
-    padding: 3rem 0;
+    padding: 4rem 0;
     display: flex;  
     justify-content: space-evenly;
     border-top: 1px solid v.$c1;

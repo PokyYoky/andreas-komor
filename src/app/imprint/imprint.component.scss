@@ -1,0 +1,7 @@
+@use 'src/variables' as v;
+
+.imprint {
+    margin-top: v.$header-height;
+    //padding: v.$header-height 0;
+    background-color: white;
+}

@@ -19,8 +19,9 @@ $hang: cubic-bezier(0, -0.01, .61, 2.41);
 p {
     font-size: 4rem;
     align-self: flex-start;
-    padding-left: 8rem;
-    margin: 20px;
+    //padding-left: 8rem;
+    //margin: 20px;
+    //margin-block: 0;
 }
 
 span {
@@ -30,15 +31,15 @@ span {
 }
 
 .jump1:hover {
-    animation: jump 225ms $hang;
+    animation: jump 300ms $hang;
 }
 
 .jump2:hover {
-    animation: jump 325ms $hang;
+    animation: jump 400ms $hang;
 }
 
 .jump3:hover {
-    animation: jump 360ms $hang;
+    animation: jump 500ms $hang;
 }
 
 .rotate:hover {
