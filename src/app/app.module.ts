@@ -21,6 +21,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoadSpinnerComponent } from './load-spinner/load-spinner.component';
 import { UserMessageComponent } from './user-message/user-message.component';
 import { FooterComponent } from './footer/footer.component';
+import { ImprintComponent } from './imprint/imprint.component';
+import { MainPageComponent } from './main-page/main-page.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { FooterComponent } from './footer/footer.component';
     ContactPageComponent,
     LoadSpinnerComponent,
     UserMessageComponent,
-    FooterComponent
+    FooterComponent,
+    ImprintComponent,
+    MainPageComponent
   ],
   imports: [
     BrowserModule,
