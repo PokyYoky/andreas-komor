@@ -1,0 +1,20 @@
+@use 'src/variables' as v;
+@use 'src/mixins' as m;
+
+// .menu {
+
+//     * nav {
+//         @include m.d-flex(column, space-between, flex-start);
+//     }
+   
+// }
+
+.menu {
+    @include m.menu-background;
+    transform: translateX(100%);
+    transition: all 225ms ease-in-out;
+}
+
+.show {
+    transform: translateX(10px);
+}

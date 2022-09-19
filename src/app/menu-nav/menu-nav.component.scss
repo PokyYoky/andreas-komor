@@ -1,0 +1,42 @@
+@use 'src/variables' as v;
+@use 'src/mixins' as m;
+
+nav {
+    //@include m.d-flex(row, space-around, center);
+   // width: 100%;
+    
+    a {
+        margin: 20px;
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+        position: relative;
+
+        &:first-child {
+            color: v.$c2;
+        }
+
+        &::after {
+            transition: all 250ms ease;
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 3px;
+            background-color: v.$c1;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+
+}
+
+.mark {
+    border-bottom: 3px solid v.$c1;
+}

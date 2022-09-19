@@ -23,6 +23,9 @@ import { UserMessageComponent } from './user-message/user-message.component';
 import { FooterComponent } from './footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { MainPageComponent } from './main-page/main-page.component';
+import { MenuMobileComponent } from './menu-mobile/menu-mobile.component';
+import { MenuNavComponent } from './menu-nav/menu-nav.component';
+import { MenuSwitchComponent } from './menu-switch/menu-switch.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +48,10 @@ import { MainPageComponent } from './main-page/main-page.component';
     UserMessageComponent,
     FooterComponent,
     ImprintComponent,
-    MainPageComponent
+    MainPageComponent,
+    MenuMobileComponent,
+    MenuNavComponent,
+    MenuSwitchComponent
   ],
   imports: [
     BrowserModule,

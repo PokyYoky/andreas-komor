@@ -39,3 +39,15 @@ body {
 
     padding: v.$base-padding;
 }
+
+.menu {
+    position: fixed;
+    top: v.$header-height;
+    right: 0px;
+
+    * nav {
+        @include m.d-flex(column, space-between, flex-start);
+    }
+
+    //transform: translateX(100%);
+}

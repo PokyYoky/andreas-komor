@@ -3,6 +3,7 @@
 
 .header {
     @include m.d-flex(row, space-between, center);
+    @include m.menu-background;
 
     position: fixed;
     z-index: 10;
@@ -12,48 +13,6 @@
     height: v.$header-height;
     padding-left: v.$base-padding;
     padding-right: v.$base-padding;
-    backdrop-filter: blur(5px);
-    background-color: rgba(0, 0, 0, 0.3);
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.8);
-
-    nav {
-        @include m.d-flex(row, space-around, center);
-        width: 60%;
-        
-        a {
-            font-size: 1.2rem;
-            text-decoration: none;
-            color: white;
-            text-transform: uppercase;
-            cursor: pointer;
-            position: relative;
-
-            &:first-child {
-                color: v.$c2;
-            }
-
-            &::after {
-                transition: all 250ms ease;
-                content: "";
-                display: block;
-                position: absolute;
-                left: 0;
-                bottom: -3px;
-                width: 0;
-                height: 3px;
-                background-color: v.$c1;
-            }
-
-            &:hover::after {
-                width: 100%;
-            }
-        }
-
-    }
-
-    .mark {
-        border-bottom: 3px solid v.$c1;
-    }
 }
 
 .logo {

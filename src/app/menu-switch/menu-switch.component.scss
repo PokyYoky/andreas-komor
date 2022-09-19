@@ -1,0 +1,23 @@
+@use 'src/variables' as v;
+@use 'src/mixins' as m;
+
+.menu-icon {
+    width: 52px;
+    height: 52px;
+
+    cursor: pointer;
+
+    &:hover {
+        width: 72px;
+        height: 72px;
+    }
+}
+
+//additional div to avoid shifts during hover in header
+.icon-frame {
+    width: 90px;
+    height: 90px;
+    padding: 0;
+
+    @include m.d-flex(row, flex-end, center);
+}
