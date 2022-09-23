@@ -1,4 +1,5 @@
 import { Component, OnInit} from '@angular/core';
+import { SwitchService } from '../switch.service';
 
 @Component({
   selector: 'app-menu-mobile',
@@ -7,7 +8,7 @@ import { Component, OnInit} from '@angular/core';
 })
 export class MenuMobileComponent implements OnInit {
 
-  constructor() { }
+  constructor(public menuSwitch: SwitchService) { }
 
   ngOnInit(): void {
   }
