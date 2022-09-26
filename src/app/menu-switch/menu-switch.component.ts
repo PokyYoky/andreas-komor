@@ -17,6 +17,6 @@ export class MenuSwitchComponent implements OnInit {
 
   toggleMenu() {
     this.openedMenu = !this.openedMenu;
-    this.menuSwitch.status = this.openedMenu;
+    this.menuSwitch.state = this.openedMenu;
   }
 }

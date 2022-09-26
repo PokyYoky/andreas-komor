@@ -4,16 +4,16 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class SwitchService {
-  state: boolean = false;
+  #state: boolean = false;
   constructor() { }
 
   //get state
-  get status(): boolean {
-    return this.state;
+  get state(): boolean {
+    return this.#state;
   }
 
   //set state
-  set status(val: boolean) {
-    this.state = val;
+  set state(val: boolean) {
+    this.#state = val;
   }
 }
