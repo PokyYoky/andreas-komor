@@ -1,8 +1,8 @@
 @use 'src/variables' as v;
 
 :host ::ng-deep img {
-    width: 400px;
-    height: 400px;
+    //width: 400px;
+    //height: 400px;
     position: absolute;
     top: -220px;
     right: 0px;
@@ -24,7 +24,54 @@
 
     100% {
         opacity: 1;
-        transform: translate(-200px, 400px);
+        //transform: translate(-200px, 400px);
+        transform: translate(-15vw, 25vh);
         box-shadow: 0 0 20px v.$c1;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translate(0, 0);
+            transform: scale(0.6);
+            box-shadow: 20px -20px 50px v.$c1;
+        }
+    
+        85% {
+            box-shadow: 0 0 30px v.$c1;
+        }
+    
+        100% {
+            opacity: 1;
+            //transform: translate(-200px, 400px);
+            transform: translate(-15vw, 30vh);
+            box-shadow: 0 0 20px v.$c1;
+        }
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translate(0, 0);
+            transform: scale(0.6);
+            box-shadow: 20px -20px 50px v.$c1;
+        }
+    
+        85% {
+            box-shadow: 0 0 30px v.$c1;
+        }
+    
+        100% {
+            opacity: 1;
+            //transform: translate(-200px, 400px);
+            transform: translate(-15vw, 42vh);
+            box-shadow: 0 0 20px v.$c1;
+        }
     }
 }

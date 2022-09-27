@@ -11,8 +11,8 @@
     left: 0;
     right: 0;
     height: v.$header-height;
-    padding-left: v.$base-padding;
-    padding-right: v.$base-padding;
+    padding: 0 v.$base-padding;
+    //padding: 0 10%;
 }
 
 .logo {

@@ -11,10 +11,13 @@
 
 .menu {
     @include m.menu-background;
-    transform: translateX(100%);
-    transition: all 225ms ease-in-out;
+    opacity: 0;
+    transform: translateX(130%);
+    transition: all 250ms ease-in-out;
+
 }
 
 .show {
-    transform: translateX(10px);
+    opacity: 1;
+    transform: translateX(0);
 }

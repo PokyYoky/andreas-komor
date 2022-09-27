@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-avatar',
@@ -11,9 +11,22 @@ export class AvatarComponent implements OnInit {
   @Input() imgAlt: string = 'Andreas Komor';
   @Input() imgPadding: string = 'padding: 0';
 
+  imgWidth: number = 400;
+  imgHeight: number = 400;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.setImgSize();
   }
 
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.setImgSize();
+  }
+
+  setImgSize() {
+    this.imgWidth = window.innerWidth / 4;
+    this.imgHeight = this.imgWidth;
+  }
 }

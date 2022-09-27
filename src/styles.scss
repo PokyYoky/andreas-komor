@@ -44,6 +44,7 @@ body {
     position: fixed;
     top: v.$header-height;
     right: 0px;
+    z-index: 10;
 
     * nav {
         @include m.d-flex(column, space-between, flex-start);
@@ -52,8 +53,57 @@ body {
     //transform: translateX(100%);
 }
 
+.icon-frame {
+    visibility: hidden;
+}
 
-@media screen and (max-width: 1000px) {
+.header {
+    .menu-items {
+        visibility: visible;
+    }
+}
+
+// .arrow {
+//     display: inline;
+// }
+
+
+@media screen and (max-width: 650px) {
+
+    html {
+        font-size: 0.7em;
+    }
+
+    .header {
+        .menu-items {
+            visibility: hidden;
+        }
+    }
     
+    .icon-frame {
+        visibility: visible;
+    }
+
+    .arrow {
+        display: none;
+        //visibility: hidden;
+    }
+
+    // .avatar-animated {
+    //     width: 100px;
+    //     height: 100px;
+    // }
+
+    // .base-frame {
+    //     @include m.d-flex(column, center, center);
     
+    //     //padding: 60px;
+    // }
+    
+}
+
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 0.5em;
+    }
 }
