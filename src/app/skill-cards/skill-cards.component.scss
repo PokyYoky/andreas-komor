@@ -10,7 +10,7 @@
     margin: calc(v.$head-radius/2) 10px;
     position: relative;
     color: black;
-    font-size: 0.9rem;
+    font-size: calc(150px * 0.13); //0.7rem;
     font-weight: bold;
 
     .skill-head {
@@ -104,5 +104,20 @@
     }
     100% {
         transform: translate(0, 0);
+    }
+}
+
+
+// @media screen and (max-width: 500px) {
+//     .skill-body {
+//         font-size: 2rem;
+//     }
+// }
+
+@media screen and (max-width: 440px) {
+    .skill-body {
+        width: 50vw;
+        height: calc(50vw * 0.6);
+        //font-size: 1.4rem;
     }
 }

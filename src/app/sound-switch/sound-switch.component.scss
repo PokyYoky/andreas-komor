@@ -1,6 +1,7 @@
+@use 'src/variables' as v;
+
 .sound {
-    height: 32px;
-    width: 32px;
+    height: calc(v.$header-height * 0.4);
     object-fit: cover;
     cursor: pointer;
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { SwitchService } from '../switch.service';
 
 @Component({
@@ -9,6 +9,7 @@ import { SwitchService } from '../switch.service';
 export class MenuSwitchComponent implements OnInit {
 
   openedMenu: boolean = false;
+  fadeIn: boolean = false;
 
   constructor(public menuSwitch: SwitchService) { }
 
@@ -18,5 +19,11 @@ export class MenuSwitchComponent implements OnInit {
   toggleMenu() {
     this.openedMenu = !this.openedMenu;
     this.menuSwitch.state = this.openedMenu;
+  }
+
+  @HostListener('window:resize', [])
+  onResize() {
+    //fade in or out of menu switch
+    this.fadeIn = (document.documentElement.clientWidth <= 650);
   }
 }

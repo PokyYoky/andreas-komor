@@ -1,4 +1,4 @@
-<div class="icon-frame">
+<div *ngIf="fadeIn" class="icon-frame">
 <img *ngIf="!openedMenu" class="menu-icon" src="./assets/img/menu_open_white_36dp.svg" alt="open menu" title="open menu" (click)="toggleMenu()">
 <img *ngIf="openedMenu" class="menu-icon" src="./assets/img/clear_white_36dp.svg" alt="close menu" title="close menu" (click)="toggleMenu()">
 </div>

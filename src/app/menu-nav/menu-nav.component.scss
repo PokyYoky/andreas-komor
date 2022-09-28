@@ -7,9 +7,9 @@ nav {
     
     a {
         margin: 20px;
-        font-size: 1.2rem;
+        font-size: min(0.8rem, 32px);
         text-decoration: none;
-        line-height: 30px;
+        line-height: 1.2rem;
         color: white;
         text-transform: uppercase;
         cursor: pointer;

@@ -20,13 +20,14 @@ export class AvatarComponent implements OnInit {
     this.setImgSize();
   }
 
-  @HostListener('window:resize', ['$event'])
+  @HostListener('window:resize', [])
   onResize() {
     this.setImgSize();
   }
 
   setImgSize() {
-    this.imgWidth = window.innerWidth / 4;
+    let size: number = window.innerWidth / 8;
+    this.imgWidth = (size <= 80) ? size : 80;
     this.imgHeight = this.imgWidth;
   }
 }

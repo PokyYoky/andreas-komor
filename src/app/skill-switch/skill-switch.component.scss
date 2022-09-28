@@ -5,13 +5,13 @@
 }
 
 button {
-    height: 3.5rem;
-    min-width: 6rem;
+    height: min(4rem, 80px);
+    width: min(7.5rem, 150px);
     background-color: black;
     border-image: none;
     border: 1px solid v.$c2;
     margin: 0 2px;
-    font-size: 0.9rem;
+    font-size: min(1.2rem, 24px);
     color: white;
     cursor: pointer;
 

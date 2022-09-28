@@ -3,13 +3,10 @@
 
 .content {
     @include m.d-flex(column, center, center);
-
-    height: 100vh;
-    width: 100%;
+    //@include m.full-size;
     position: relative;
     color: white;
     animation: slideLayout 1s ease-out forwards;
-    margin: 25% 0;
 
     a {
         text-decoration: none;
@@ -26,6 +23,10 @@
             color: v.$c1_l;
         }
     }
+}
+
+.welcome-page {
+    @include m.full-size;
 }
 
 

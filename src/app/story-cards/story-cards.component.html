@@ -1,5 +1,5 @@
 <div *ngFor="let story of stories" class="story-body">
     <app-avatar [imgPath]="story.src" [imgAlt]="story.alt" [ngStyle]="{'width.px': 80, 'height.px': 80}"></app-avatar>
-    <p>{{ story.title }}</p>
-    <p style="text-align: center; font-size: smaller">{{ story.desc }}</p>
+    <p class="story-title">{{ story.title }}</p>
+    <p class="story-desc">{{ story.desc }}</p>
 </div>

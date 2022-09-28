@@ -11,3 +11,29 @@
     @include m.d-flex(column, flex-start, center);
     width: 20%;
 }
+
+
+@media screen and (max-width: 650px) {
+    :host {
+        @include m.d-flex(column, space-evenly, center);
+    }
+
+    .story-title {
+        padding-top: 0.4rem; 
+        font-size: 2rem;
+        line-height: 1.7rem;
+        text-align: center; 
+    }
+
+    .story-body {
+        @include m.d-flex(column, space-evenly, center);
+        width: 80%;
+        padding: 1rem 0;
+
+        .story-desc {
+            font-size: 1.7rem;
+            line-height: 1.7rem;
+            text-align: justify;
+        }
+    }
+}
