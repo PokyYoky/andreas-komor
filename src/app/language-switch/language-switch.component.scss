@@ -11,7 +11,8 @@
 
     .button {
         @include m.d-flex(row, center, center);
-        width: 2rem;
+        //width: 2rem;
+        padding: 0 0.5rem;
         border: 1px solid white;
         border-radius: 4px;
         margin: 0 2px;
@@ -27,4 +28,5 @@
 .clicked {
     transform: rotate(7deg);
     background-color: v.$c1_tr;
+    box-shadow: 4px 4px 6px 3px rgba(0, 0, 0, 0.8), 1px 1px 4px 3px rgba(255, 255, 255, 1);
 }
