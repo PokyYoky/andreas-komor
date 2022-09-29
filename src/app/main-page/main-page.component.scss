@@ -3,7 +3,7 @@
 
 .content {
     @include m.d-flex(column, center, center);
-    //@include m.full-size;
+    @include m.full-size;
     position: relative;
     color: white;
     animation: slideLayout 1s ease-out forwards;

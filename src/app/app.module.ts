@@ -29,6 +29,7 @@ import { MenuSwitchComponent } from './menu-switch/menu-switch.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { LanguageSwitchComponent } from './language-switch/language-switch.component';
 
 
 // AoT requires an exported function for factories
@@ -61,7 +62,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     MainPageComponent,
     MenuMobileComponent,
     MenuNavComponent,
-    MenuSwitchComponent
+    MenuSwitchComponent,
+    LanguageSwitchComponent
   ],
   imports: [
     BrowserModule,

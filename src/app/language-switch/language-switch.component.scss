@@ -1,0 +1,30 @@
+@use 'src/variables' as v;
+@use 'src/mixins' as m;
+
+.lang-frame {
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    @include m.d-flex(row, center, center);
+    color: white;
+    font-size: min(0.8rem, 18px);
+
+    .button {
+        @include m.d-flex(row, center, center);
+        width: 2rem;
+        border: 1px solid white;
+        border-radius: 4px;
+        margin: 0 2px;
+        cursor: pointer;
+        transition: all 225ms ease-in-out;
+
+        &:hover {
+            border-color: v.$c1;
+        }
+    }
+}
+
+.clicked {
+    transform: rotate(7deg);
+    background-color: v.$c1_tr;
+}
