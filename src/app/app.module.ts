@@ -26,6 +26,16 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { MenuMobileComponent } from './menu-mobile/menu-mobile.component';
 import { MenuNavComponent } from './menu-nav/menu-nav.component';
 import { MenuSwitchComponent } from './menu-switch/menu-switch.component';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
+
+// AoT requires an exported function for factories
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
+
 
 @NgModule({
   declarations: [
@@ -56,8 +66,17 @@ import { MenuSwitchComponent } from './menu-switch/menu-switch.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    TranslateModule.forRoot({
+      defaultLanguage: 'de',
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
