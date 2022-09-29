@@ -1,12 +1,12 @@
-<p class="text">Get in touch via the form below or by email: <a href="mailto:e-text@online.de" title="click to open your email client">e-text@online.de</a></p>
+<p class="text" translate>Get in touch via the form below or by email: <a href="mailto:e-text@online.de" title="click to open your email client">e-text@online.de</a></p>
 <form (submit)="sendMail()" class="contact-section" ngNativeValidate #myForm>
-    <label for="name">Name</label>
+    <label for="name" translate>Name</label>
     <input id="name" name="name" type="text" placeholder="Enter your name" required title="Please enter your name" #fieldName>
-    <label for="mail">E-Mail address</label>
+    <label for="mail" translate>E-Mail address</label>
     <input id="mail" name="email" type="email" placeholder="Enter your Email address" required title="Please enter your mail address" #fieldEmail>
-    <label for="message">Message</label>
+    <label for="message" translate>Message</label>
     <textarea id="message" name="message" type="text" placeholder="Enter your message" rows="10" required title="Please enter your message" #fieldMessage></textarea>
-    <button type="submit" title="send a mail" #btnSend>Send</button>
+    <button type="submit" title="send a mail" #btnSend translate>Send</button>
     <app-load-spinner *ngIf="loadAnimationOn"></app-load-spinner>
     <app-user-message [loadUserMessage]="loadUserMessage" [userMessage]="uMessage"></app-user-message>
 </form>
