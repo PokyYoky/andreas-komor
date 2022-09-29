@@ -6,7 +6,9 @@
 	"Send": "Send",
 	"Legal Notice": "Legal Notice",
 	"Angaben gemäß § 5 TMG": "",
+    "Germany": "Germany",
 	"Contact:": "Contact:",
+    "mobile: 0049 159 01831822" : "mobile: 0049 159 01831822",
 	"Haftungsausschluss:": "",
 	"Datenschutz": "",
 	"Die Nutzung meiner Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf meinen Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.": "",
@@ -25,5 +27,7 @@
 	"About": "About",
 	"Contact": "Contact",
 	"All": "All",
+    "Hi,": "Hi,",
+    "I'm": "I'm",
 	"Welcome to my Webpage!": "Welcome to my Webpage!"
 }
