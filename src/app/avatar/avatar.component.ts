@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, HostListener } from '@angular/core';
+import { DOMListenerService } from '../domlistener.service';
 
 @Component({
   selector: 'app-avatar',
@@ -14,7 +15,7 @@ export class AvatarComponent implements OnInit {
   imgWidth: number = 400;
   imgHeight: number = 400;
 
-  constructor() { }
+  constructor(private viewport: DOMListenerService) { }
 
   ngOnInit(): void {
     this.setImgSize();
@@ -26,8 +27,8 @@ export class AvatarComponent implements OnInit {
   }
 
   setImgSize() {
-    let size: number = window.innerWidth / 8;
-    this.imgWidth = (size <= 80) ? size : 80;
+    let size: number = this.viewport.VMin / 6;
+    this.imgWidth = (size >= 80) ? size : 80;
     this.imgHeight = this.imgWidth;
   }
 }

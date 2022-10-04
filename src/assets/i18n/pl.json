@@ -1,5 +1,5 @@
 {
-	"Get in touch via the form below or by email:": "Get in touch via the form below or by email:",
+	"Get in touch via the form below or by email:": "Skontaktuj się przez poniższy formularz lub pisząc e-mail:",
 	"Name": "Imię i nazwisko",
 	"E-Mail address": "adres e-mail",
 	"Message": "Wiadomość",
@@ -7,11 +7,11 @@
 	"Legal Notice": "Polityka prywatności",
 	"Angaben gemäß § 5 TMG": "",
     "Germany": "Niemcy",
-	"Kontakt:": "Kontakt:",
+	"Contact": "Kontakt",
     "mobile: 0049 159 01831822" : "mobile: 0049 159 01831822",
-	"Haftungsausschluss:": "",
-	"Datenschutz": "",
-	"Die Nutzung meiner Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf meinen Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.": "",
+	"Disclaimer": "Disclaimer",
+	"Data protection": "Prywatność",
+	"The use of my website is usually possible without providing personal data. As far as mine pages personal data is collected (e.g. name, address or e-mail addresses), this is done insofar as possible, always on a voluntary basis. This data will not be passed on to third parties without your express consent passed on.": "",
 	"Ich weise darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.": "",
 	"Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Der Betreiber der Seiten behält sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.": "",
 	"from": "",
@@ -25,9 +25,9 @@
 	"Skills": "",
 	"Projects": "Projekty",
 	"About": "O mnie",
-	"Contact": "Kontakt:",
 	"All": "wszystko",
     "Hi,": "Cześć,",
     "I'm": "jestem",
-	"Welcome to my Webpage!": "Witam na mojej stronie internetowej!"
+	"Welcome to my Webpage!": "Witam na mojej stronie internetowej!",
+	"how it began": "jak się zaczęło"
 }

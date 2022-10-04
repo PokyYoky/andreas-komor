@@ -7,11 +7,11 @@
 	"Legal Notice": "Impressum",
 	"Angaben gemäß § 5 TMG": "",
     "Germany": "Deutschland",
-	"Contact:": "",
+	"Contact": "Kontakt",
     "mobile: 0049 159 01831822" : "mobile: 0049 159 01831822",
-	"Haftungsausschluss:": "",
-	"Datenschutz": "",
-	"Die Nutzung meiner Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf meinen Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.": "",
+	"Disclaimer": "Haftungsausschluss",
+	"Data protection": "Datenschutz",
+	"The use of my website is usually possible without providing personal data. As far as mine pages personal data is collected (e.g. name, address or e-mail addresses), this is done insofar as possible, always on a voluntary basis. This data will not be passed on to third parties without your express consent passed on.": "Die Nutzung meiner Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf meinen Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.",
 	"Ich weise darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.": "",
 	"Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Der Betreiber der Seiten behält sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.": "",
 	"from": "der",
@@ -25,9 +25,9 @@
 	"Skills": "Kenntnisse",
 	"Projects": "Projekte",
 	"About": "Über mich",
-	"Contact": "Kontakt",
 	"All": "Alle",
     "Hi,": "Hallo,",
     "I'm": "ich bin",
-	"Welcome to my Webpage!": "Willkommen auf meiner Web-Seite!"
+	"Welcome to my Webpage!": "Willkommen auf meiner Web-Seite!",
+	"how it began": "wie es begann"
 }
