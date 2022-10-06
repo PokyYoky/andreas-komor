@@ -10,10 +10,16 @@ $hang: cubic-bezier(0, -0.01, .61, 2.41);
 
 .c2 {
     color: v.$c2; //rgb(250, 40, 89);
+    width: 1rem;
 }
 
 .c1 {
     color: v.$c1; //rgb(45, 252, 216);
+}
+
+.mid {
+    text-align: center;
+    font-stretch: expanded;
 }
 
 p {
@@ -55,6 +61,7 @@ span {
 
     100% {
         transform: translateY(0px);
+        font-weight: bolder;
     }
 }
 
