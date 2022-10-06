@@ -2,7 +2,7 @@
   <div class="content welcome-page">
     <app-welcome class="pos-left-up"></app-welcome>
     <app-avatar-animated class="avatar-animated">
-      <app-avatar></app-avatar>
+      <app-avatar [isIcon]="false"></app-avatar>
     </app-avatar-animated>
     <a href="#skills">
       <app-arrow-down></app-arrow-down>
@@ -21,11 +21,11 @@
     <p class="headline" translate>About me.</p>
     <div class="section">
       <app-avatar-static>
-        <app-avatar></app-avatar>
+        <app-avatar [isIcon]="false"></app-avatar>
       </app-avatar-static>
-      <p class="text-normal"><q translate> I am an avid photographer and software developer.<br>Developing customer-oriented
+      <p class="text-normal"><q translate>I am an avid photographer and software developer.<br>Developing customer-oriented
           solutions
-          is my preference. </q></p>
+          is my preference.</q></p>
     </div>
     <app-story-cards class="story-frame"></app-story-cards>
   </div>

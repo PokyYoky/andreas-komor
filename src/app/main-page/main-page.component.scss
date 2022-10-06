@@ -6,7 +6,7 @@
     @include m.full-size;
     position: relative;
     color: white;
-    animation: slideLayout 1s ease-out forwards;
+    //animation: slideLayout 1s ease-out forwards;
 
     a {
         text-decoration: none;
@@ -25,11 +25,6 @@
     }
 }
 
-.welcome-page {
-    @include m.full-size;
-}
-
-
 .cards-frame {
     @include m.mosaic-order;
     max-width: 510px;
@@ -42,7 +37,6 @@
 
 .pos-left-up {
     align-self: flex-start;
-    margin-bottom: 10rem;
 }
 
 .section {
@@ -75,5 +69,23 @@
         background-color: inherit;
         filter: blur(0px);
         opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .section {
+        @include m.d-flex(column, center, center);
+    }
+
+    .headline {
+        @include m.separator;
+        width: 100%;
+        padding-top: 3rem;
+        text-align: center;
+    }
+
+    .skill-page, .project-page, .about-page, .contact-page {
+        height: auto;
     }
 }

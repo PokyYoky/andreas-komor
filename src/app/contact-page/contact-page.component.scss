@@ -2,8 +2,28 @@
 @use 'src/mixins' as m;
 
 
+.link {
+    
+    &:link {
+        color: v.$c2;
+        text-decoration: none;
+    }
+
+    &:visited {
+        color: rgb(252, 79, 120);
+    }
+
+    &:hover {
+        color: rgb(251, 127, 156);
+    }
+    
+
+}
+
 .contact-section {
     @include m.d-flex(column, center, stretch);
+    margin: 3rem 0;
+    position: relative;
 
     textarea {
         resize: none;

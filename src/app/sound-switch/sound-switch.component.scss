@@ -1,12 +1,22 @@
 @use 'src/variables' as v;
+@use 'src/mixins' as m;
 
-.sound {
-    height: calc(v.$header-height * 0.4);
-    object-fit: cover;
-    cursor: pointer;
+.sound-frame {
+    @include m.d-flex(row, center, center);
+    height: 52px;
+    width: 52px;
+    border: 1px solid v.$c2;
+    border-radius: 100%;
 
-    &:hover {
-       animation: bounce 455ms infinite;
+
+    .sound {
+        height: calc(v.$header-height * 0.3);
+        object-fit: cover;
+        cursor: pointer;
+
+        &:hover {
+            animation: bounce 455ms infinite;
+        }
     }
 }
 

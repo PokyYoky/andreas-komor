@@ -21,3 +21,19 @@
     object-fit: cover;
     cursor: pointer;
 }
+
+.section-right {
+    height: 100%;
+    @include m.d-flex(column, space-evenly, flex-end);
+
+    * {
+        padding: 4px;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .section-right {
+        @include m.d-flex(row, flex-end, flex-start);
+    }
+}

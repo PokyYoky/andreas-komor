@@ -3,13 +3,18 @@
 
 :host {
     @include m.d-flex(row, space-evenly, stretch);
+    @include m.separator;
     padding: 4rem 0;
-    border-top: 1px solid v.$c1;
 }
 
 .story-body {
     @include m.d-flex(column, flex-start, center);
     width: 20%;
+
+    .story-desc {
+        //font-size: 1.7rem;
+        line-height: 1.7rem;
+    }
 }
 
 
@@ -31,8 +36,8 @@
         padding: 1rem 0;
 
         .story-desc {
-            font-size: 1.7rem;
-            line-height: 1.7rem;
+            //font-size: 1.7rem;
+            line-height: 2rem;
             text-align: justify;
         }
     }

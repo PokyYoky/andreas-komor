@@ -2,9 +2,9 @@
 @use 'src/mixins' as m;
 
 .lang-frame {
-    position: absolute;
-    top: 4px;
-    right: 5px;
+    // position: absolute;
+    // top: 4px;
+    // right: 5px;
     @include m.d-flex(row, center, center);
     color: white;
     font-size: min(0.8rem, 18px);

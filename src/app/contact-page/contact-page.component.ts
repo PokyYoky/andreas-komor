@@ -22,7 +22,7 @@ export class ContactPageComponent implements OnInit {
   loadAnimationOn: boolean = false;
 
   //handling user-message
-  uMessage: string = 'Ich habe Ihre E-Mail erhalten.<br>Vielen Dank.';
+  uMessage: string = 'I received your mail successfully.<br>Thank you.';
   loadUserMessage: boolean = false;
 
   async sendMail() {

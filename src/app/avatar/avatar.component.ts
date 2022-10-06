@@ -11,6 +11,7 @@ export class AvatarComponent implements OnInit {
   @Input() imgPath: string = './assets/img/me_640.jpg';
   @Input() imgAlt: string = 'Andreas Komor';
   @Input() imgPadding: string = 'padding: 0';
+  @Input() isIcon: boolean = false;
 
   imgWidth: number = 400;
   imgHeight: number = 400;
@@ -27,8 +28,15 @@ export class AvatarComponent implements OnInit {
   }
 
   setImgSize() {
-    let size: number = this.viewport.VMin / 6;
-    this.imgWidth = (size >= 80) ? size : 80;
+    let size: number = 0;
+
+    if (!this.isIcon) {
+      size = this.viewport.VMin / 6;
+      this.imgWidth = (size >= 120) ? size : 120;
+    } else {
+      size = this.viewport.VMin / 16;
+      this.imgWidth = (size >= 60) ? size : 60;
+    }
     this.imgHeight = this.imgWidth;
   }
 }
