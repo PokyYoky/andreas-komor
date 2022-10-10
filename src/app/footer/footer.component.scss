@@ -21,15 +21,15 @@ footer {
 
         a {
             padding-left: 40px;
-    
+
             &:link {
                 color: rgba(0, 0, 0, 0.9);
             }
-    
+
             &:visited {
                 color: rgba(0, 0, 0, 0.7);
             }
-    
+
             &:hover {
                 color: rgba(0, 0, 0, 0.5);
             }
@@ -40,4 +40,18 @@ footer {
         height: 48px;
         width: 48px;
     }
+}
+
+
+@media screen and (max-width: 420px) {
+    .right {
+        @include m.d-flex(column, center, center);
+        
+        // .logo {
+        //     height: 24px;
+        //     width: 24px;
+        // }
+    }    
+
+   
 }

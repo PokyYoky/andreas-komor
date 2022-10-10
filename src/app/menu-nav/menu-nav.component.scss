@@ -1,13 +1,14 @@
 @use 'src/variables' as v;
 @use 'src/mixins' as m;
 
-nav {
-    //@include m.d-flex(row, space-around, center);
-   // width: 100%;
-    
+.menu-items {
+    display: block;
+}
+
+nav {    
     a {
         margin: 20px;
-        font-size: min(0.8rem, 30px);
+        font-size: min(0.8rem, 24px);
         text-decoration: none;
         line-height: 1.2rem;
         color: white;
@@ -35,9 +36,14 @@ nav {
             width: 100%;
         }
     }
-
 }
 
 .mark {
     border-bottom: 3px solid v.$c1;
+}
+
+@media screen and (max-width: 650px) {
+    .menu-items {
+        display: none;
+    }  
 }

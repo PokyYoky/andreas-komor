@@ -3,10 +3,8 @@
 
 .content {
     @include m.d-flex(column, center, center);
-    @include m.full-size;
     position: relative;
     color: white;
-    //animation: slideLayout 1s ease-out forwards;
 
     a {
         text-decoration: none;
@@ -25,6 +23,16 @@
     }
 }
 
+.welcome-page {
+    //@include m.d-flex(column, space-between, center);
+    @include m.full-size;
+    //padding-top: calc(v.$header-height);
+}
+
+.inner-frame {
+    @include m.d-flex(column, center, center);
+}
+
 .cards-frame {
     @include m.mosaic-order;
     max-width: 510px;
@@ -37,13 +45,13 @@
 
 .pos-left-up {
     align-self: flex-start;
+    //padding-bottom: 15rem;
 }
 
 .section {
     @include m.d-flex(row, center, center);
 
     width: 100%;
-    padding: 4rem 0;
 
     p {
         padding: 80px;

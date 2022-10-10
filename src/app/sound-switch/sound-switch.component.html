@@ -1,4 +1,4 @@
-<div class="sound-frame">
+<div class="sound-frame" [class.playing]="onAir">
     <img *ngIf="onAir" class="sound" src="./assets/img/icon_sound_off_white.svg" alt="sound_on" (click)="soundToggle()"
         title="turn off sound">
     <img *ngIf="!onAir" class="sound" src="./assets/img/icon_sound_on_white.svg" alt="sound_on" (click)="soundToggle()"

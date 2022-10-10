@@ -3,7 +3,6 @@
 
 :host {
     @include m.d-flex(row, space-evenly, stretch);
-    @include m.separator;
     padding: 4rem 0;
 }
 
