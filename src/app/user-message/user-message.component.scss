@@ -1,7 +1,7 @@
 @use 'src/variables' as v;
 @use 'src/mixins' as m;
 
-.overlay {
+.overlay-message {
     @include m.d-flex(row, center, center);
     position: absolute;
     z-index: -10;

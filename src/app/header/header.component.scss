@@ -36,4 +36,8 @@
     .section-right {
         @include m.d-flex(row, flex-end, flex-start);
     }
+
+    .menu-desktop {
+        display: none;
+    }
 }

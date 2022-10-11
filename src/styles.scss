@@ -2,7 +2,7 @@
 @use 'src/mixins' as m;
 
 html {
-    font-size: 3.3vmin;
+    font-size: min(3.3vmin, 28px);
     scroll-behavior: smooth;
 }
 
@@ -48,24 +48,9 @@ body {
     }
 }
 
-// .header {
-//     .menu-items {
-//         display: visible;
-//     }
-// }
-
 
 @media screen and (max-width: 650px) {
-    // .header {
-    //     .menu-items {
-    //         visibility: hidden;
-    //     }
-    // }
-
     .arrow {
         display: none;
     }
-}
-
-@media screen and (max-width: 500px) {
 }

@@ -29,10 +29,10 @@
     }
 
     &:hover .hover-only {
-            visibility: visible;
+        visibility: visible;
     }
 
-    .overlay {
+    .overlay-project {
         @include m.radius(5px);
         @include m.d-flex(column, space-evenly, center);
         position: absolute;
@@ -40,6 +40,7 @@
         height: 100%;
         width: 100%;
         background-color: rgba(255, 255, 255, 0.6);
+        font-size: 16px; //clamp(0.6rem, 1.5rem, 1.3rem);
 
         span {
             padding: 0.5rem 1rem;

@@ -45,13 +45,9 @@ footer {
 
 @media screen and (max-width: 420px) {
     .right {
-        @include m.d-flex(column, center, center);
-        
-        // .logo {
-        //     height: 24px;
-        //     width: 24px;
-        // }
+        .logo {
+            height: 24px;
+            width: 24px;
+        }
     }    
-
-   
 }

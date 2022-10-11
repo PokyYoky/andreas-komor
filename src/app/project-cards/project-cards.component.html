@@ -4,7 +4,7 @@
    </div>
     -->
         <img *ngIf="project.image" class="project-img" src="{{ project.image }}" alt="project {{ project.title }}">
-        <div class="overlay hover-only">
+        <div class="overlay-project hover-only">
             <span class="title">{{ project.title }}</span>
             <span class="desc">{{ project.description }}</span>
             <a *ngIf="project.url" role="button" href="{{ project.url }}" target="_blank">Try out</a>

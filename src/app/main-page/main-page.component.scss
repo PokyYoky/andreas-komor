@@ -24,9 +24,8 @@
 }
 
 .welcome-page {
-    //@include m.d-flex(column, space-between, center);
     @include m.full-size;
-    //padding-top: calc(v.$header-height);
+    padding-top: calc(v.$header-height/2);
 }
 
 .inner-frame {
@@ -45,7 +44,6 @@
 
 .pos-left-up {
     align-self: flex-start;
-    //padding-bottom: 15rem;
 }
 
 .section {

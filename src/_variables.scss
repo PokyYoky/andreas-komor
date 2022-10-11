@@ -7,6 +7,6 @@ $c1_tr: rgba(45, 252, 217, 0.8);
 
 //properties
 $bdr: 5px;
-$header-height: 10vmax; //90px;
+$header-height: clamp(80px, 10vmax, 120px); //90px;
 $base-padding: 10%;  //120px
 $head-radius: 60px;
